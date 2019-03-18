@@ -10,7 +10,13 @@ input, label, span {
       font-size: 1em;
         padding-left: 5px;
 
-}
+
+      }
+      span {
+            color: red;
+              
+      }
+        
 
 #rectangle-calc {
     width: 70px;
