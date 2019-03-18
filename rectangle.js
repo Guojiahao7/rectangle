@@ -7,14 +7,12 @@ $(function() {
 $calc.click(function() {
       if(!blnValid) return;
 
-          var width  = Number($width.val()),
-          height = Number($height.val()),
-          p      = roundFractional(width * 2 + height * 2, 2),
-          a      = roundFractional(width * height, 2);
+          var width  = $width.val(),
+          height = $height.val(),
+         var r = new Rectangle(w, h); 
 
-    $('#rectangle-perimeter').val(p);
-        $('#rectangle-area').val(a);
-          
+       $perimeter.val(r.perimeter());
+            $area.val(r.area());
 });
 
 $width.focusout(function() {
